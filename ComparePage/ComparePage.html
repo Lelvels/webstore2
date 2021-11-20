@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!-- My css -->
+	<link href="../CSS/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="slider/slide-show.css">
+	<link rel="stylesheet" href="slider/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="slider/assets/owl.carousel.min.css">
+	<!-- My js -->
+	<script src="slider/jquery.mousewheel.min.js"></script>
+	<script src="slider/owl.carousel.min.js"></script>
+	<title>Compare Page</title>
+</head>
+<body>
+
+<style>
+    .border-table{
+        border: 0.1px gray solid;
+    }
+
+    .table-container{
+        width: 90%;
+    }
+
+    .price-text{
+        color: red;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 250px;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 5px;
+    }
+
+	.table-big-text{
+		font-size: 1rem;
+		padding: 6px;
+		font-weight: bold;
+		color: white;
+	}
+
+	.table-header{
+		background-color: #1887b5;
+	}
+
+
+</style>
+
+<!-- Navigation -->
+<nav class="navbar navbar-light bg-light fixed-top">
+	<div class="container-fluid">
+		<!-- Phần danh mục -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="#navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo sản phẩm -->
+		<a href="#" class="navbar-brand"><img src="img/logo.png" alt="brand"></a>
+
+		<!-- Thanh search bar to -->
+		<form class="form-inline my-2 my-md-0" id="big-search-bar">
+			<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+			<button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</form>
+
+		<div class="user-container">
+			<div class="cart-container">
+				<a href="#" class="cart-icon">
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+			</div>
+
+			<a href="#" class="user-icon"><i class="fas fa-user-circle"></i></a>
+			<div class="wrapper">
+				<a href="#">
+					<span class="login-text">
+						Login <br/>
+						<span class="sign-up-text">
+							&Sign Up
+						</span>
+					</span>
+				</a>
+			</div>
+		</div>
+
+		
+
+		<div class="collapse navbar-collapse" id="navbarsExample01">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catergory0</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+					<a class="dropdown-item" href="#">Type0</a>
+					<a class="dropdown-item" href="#">Type1</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Catergory 1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Catergory 2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Catergory 3</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catergory 4</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+					<a class="dropdown-item" href="#">Type 1</a>
+					<a class="dropdown-item" href="#">Type 2</a>
+					<a class="dropdown-item" href="#">Type 3</a>
+					</div>
+				</li>
+			</ul>
+
+			<form class="form-inline my-2 my-md-0" id="small-search-bar">
+				<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+				<button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+			</form>
+		</div>
+
+	</div>
+</nav>
+
+<!-- Page path -->
+<hr class="my-4">
+
+<div class="container-fluid ml-5 pt-4 mt-4 mb-0">
+    <div class="row text-left">
+        <div class="col-12">
+            <span class="path-text">Home</span>
+            <span class="fas fa-chevron-right"></span>
+            <span class="path-text">Tivi Sony</span>
+            <span class="fas fa-chevron-right"></span>
+            <span class="path-text">Sony Bravia 4K</span>
+            <span class="fas fa-chevron-right"></span>
+            <span class="path-text">So Sánh</span>
+        </div>
+    </div>
+</div>
+
+<!-- Phần so sánh sản phẩm -->
+<div class="table-container container-fluid">
+
+    <div class="row">
+        <div class="border-table table-header col-3 col-sm-2 col-md-2 col-lg-2">
+            <span class="table-big-text">Product</span>
+        </div>
+
+        <div class="border-table table-header col-4 col-sm-5 col-md-4 col-lg-4">
+            <span class="table-big-text">Product 1</span>
+        </div>
+
+        <div class="border-table table-header col-4 col-sm-5 col-md-4 col-lg-4">
+            <span class="table-big-text">Product 2</span>
+        </div>
+    </div>
+
+    <!-- thẻ sản phẩm -->
+    <div class="row">
+        <div class="border-table col-2 col-sm-2 col-md-2 col-lg-2">
+            <span></span>
+        </div>
+
+        <div class="border-table col-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="card">
+				<img src="img/download.png" alt="" class="card-img-top img-fluid">
+				<div class="card-body">
+                    <a><h5 class="card-title">Title 1</h5></a>
+                    <p></p>
+                    <span class="card-text">Price:&nbsp;</span><span class="price-text">1200$</span>
+                    <p></p>
+					<div class="btn-group">
+						<a href="#" role="button" class="btn btn-sm btn-outline-secondary"><span class="fas fa-cart-plus"></span></a>
+						<a href="#" role="button" class="btn btn-sm btn-outline-secondary"><span class="fas fa-eye"></span></a>
+					</div>
+				</div>
+			</div> 
+        </div>
+
+        <div class="border-table col-4 col-sm-4 col-md-4 col-lg-4" style="background-color: white">
+            <div class="card">
+				<img src="img/download.png" alt="" class="card-img-top img-fluid">
+				<div class="card-body">
+                    <a><h5 class="card-title">Title 2</h5></a>
+                    <p></p>
+                    <span class="card-text">Price:&nbsp;</span><span class="price-text">1000$</span>
+                    <p></p>
+					<div class="btn-group">
+						<a href="#" role="button" class="btn btn-sm btn-outline-secondary"><span class="fas fa-cart-plus"></span></a>
+						<a href="#" role="button" class="btn btn-sm btn-outline-secondary"><span class="fas fa-eye"></span><span>View</span></a>
+					</div>
+				</div>
+			</div>  
+        </div>
+
+    </div>
+
+	<div class="row">
+		<div class="border-table table-header col-10 col-sm-10 col-md-10 col-lg-10">
+			<span class="table-big-text">Technical Specifications</span>
+		</div>
+	</div>
+
+	<div class="row">
+        <div class="border-table col-2 col-sm-2 col-md-2 col-lg-2">
+            <span>Power efficiency</span>
+        </div>
+
+        <div class="text-center border-table col-4 col-sm-4 col-md-4 col-lg-4">
+            <span class="table-text">36.4 W/kg</span>
+        </div>
+
+		<div class="text-center border-table col-4 col-sm-4 col-md-4 col-lg-4">
+			<span class="table-text">36.4 W/kg</span>
+		</div>
+	</div>
+	
+	<div class="row">
+        <div class="border-table col-2 col-sm-2 col-md-2 col-lg-2">
+            <span>Material</span>
+        </div>
+
+        <div class="text-center border-table col-4 col-sm-4 col-md-4 col-lg-4">
+            <span class="table-text">Stainless steel</span>
+        </div>
+
+		<div class="text-center border-table col-4 col-sm-4 col-md-4 col-lg-4">
+			<span class="table-text">Stainless steel</span>
+		</div>
+	</div>
+	
+	<div class="row">
+        <div class="border-table col-2 col-sm-2 col-md-2 col-lg-2">
+            <span>Material</span>
+        </div>
+
+        <div class="text-center border-table col-4 col-sm-4 col-md-4 col-lg-4">
+            <span class="table-text">VietNam</span>
+        </div>
+
+		<div class="text-center border-table col-4 col-sm-4 col-md-4 col-lg-4">
+			<span class="table-text">ThaiLand</span>
+		</div>
+	</div>
+	
+	<div class="row">
+        <div class="border-table col-2 col-sm-2 col-md-2 col-lg-2">
+            <span>Released year</span>
+        </div>
+
+        <div class="text-center border-table col-4 col-sm-4 col-md-4 col-lg-4">
+            <span class="table-text">2018</span>
+        </div>
+
+		<div class="text-center border-table col-4 col-sm-4 col-md-4 col-lg-4">
+			<span class="table-text">2020</span>
+		</div>
+	</div>
+	
+	<div class="row">
+        <div class="border-table col-3 col-sm-2 col-md-2 col-lg-2" style="vertical-align: center;">
+            <span>View now</span>
+        </div>
+
+        <div class="border-table text-center col-4 col-sm-5 col-md-4 col-lg-4">
+            <a href="../ProductPage/Product-page.html" role="button" class="btn btn-lg btn-primary"><span class="fas fa-eye"></span>&nbsp;<span>View</span></a>
+        </div>
+
+        <div class="border-table text-center col-4 col-sm-5 col-md-4 col-lg-4">
+            <a href="../ProductPage/Product-page.html" role="button" class="btn btn-lg btn-primary"><span class="fas fa-eye"></span>&nbsp;<span>View</span></a>
+        </div>
+    </div>
+
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Conect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="img/w3newbie.png" alt="">
+				<hr class="light">
+				<p>Phone number: 0936055146</p>
+				<p>Email: levels1912@gmail.com</p>
+				<p>Adress: 285 Đội Cấn, Ba Đình, Hà Nội</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Customer Service</h5>
+				<hr class="light">
+				<a href="#"><span>Guarantee</span></a><p></p>
+				<a href="#"><span>Cleaning</span></a><p></p>
+				<a href="../ContactUs/contact-us.php"><span style="color: royalblue;">Contact Us</span></a>
+			</div>
+
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Địa chỉ</h5>
+				<hr class="light">
+				<p>(1 cái map)</p>
+				<p>Đã Thông Báo Bộ Công Thương</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

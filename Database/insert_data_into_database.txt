@@ -1,0 +1,258 @@
+
+INSERT INTO Brands(Brand_Name)
+VALUES('Samsung');
+
+INSERT INTO Brands(Brand_Name)
+VALUES('LG');
+
+INSERT INTO Brands(Brand_Name)
+VALUES('Electrolux');
+
+
+INSERT INTO Categories(Cat_Name)
+VALUES('Washing Machine');
+
+INSERT INTO Categories(Cat_Name)
+VALUES('Tivi');
+
+INSERT INTO Categories(Cat_Name)
+VALUES('Refrigerator');
+
+
+INSERT INTO Products(Cat_ID, Brand_ID, Product_Name)
+VALUES(1, 3, 'Electrolux Washing machine');
+
+INSERT INTO Products(Cat_ID, Brand_ID, Product_Name)
+VALUES(1, 2, 'Toshiba Wahing machine');
+
+INSERT INTO Products(Cat_ID, Brand_ID, Product_Name)
+VALUES(2, 1, 'Samsung Smart Tivi');
+
+INSERT INTO Products(Cat_ID, Brand_ID, Product_Name)
+VALUES(2, 2, 'LG Smart Tivi');
+
+INSERT INTO Products(Cat_ID, Brand_ID, Product_Name)
+VALUES(1, 1, 'Samsung Washing machine Addwasher');
+
+INSERT INTO Products(Cat_ID, Brand_ID, Product_Name)
+VALUES(3, 1, 'Samsung Refrigerator 380l');
+
+INSERT INTO Products(Cat_ID, Brand_ID, Product_Name)
+VALUES(3, 2, 'Toshiba Refrigerator');
+
+
+INSERT INTO Technical_specification_details(Spec_name)
+VALUES('Power efficiency');
+
+INSERT INTO Technical_specification_details(Spec_name)
+VALUES('Material');
+
+INSERT INTO Technical_specification_details(Spec_name)
+VALUES('Origin');
+
+INSERT INTO Technical_specification_details(Spec_name)
+VALUES('Released year');
+
+INSERT INTO Technical_specification_details(Spec_name)
+VALUES('Resolution');
+
+INSERT INTO Technical_specification_details(Spec_name)
+VALUES('Capacity');
+
+INSERT INTO Technical_specification_details(Spec_name)
+VALUES('Small description');
+
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(1, 1, '36.4 W/kg');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(1, 2, 'Stainless steel');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(1, 3, 'Thailand');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(1, 4, '2018');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(1, 7, 'The full-automatic washing machine equipped with Heavy, Soft, Normal, Rapid, 
+and Soak 5 programs and 3 water levels, you are allowed to quickly start the machine the way you like.');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(2, 1, '36.4 W/kg');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(2, 2, 'Stainless steel');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(2, 3, 'Thailand');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(2, 4, '2018');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(2, 7, 'The full-automatic washing machine equipped with Heavy, Soft, Normal, Rapid, 
+and Soak 5 programs and 3 water levels, you are allowed to quickly start the machine the way you like.');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(3, 5, 'FULL HD');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(3, 4, '2018');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(3, 3, 'Thailand');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(3, 7, 'Full HD Tivi, Hyper Real Engine.');
+
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(4, 5, 'FULL HD');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(4, 4, '2018');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(4, 3, 'Thailand');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(4, 7, 'Full HD Tivi, Hyper Real Engine.');
+
+
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(5, 1, '36.4 W/kg');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(5, 2, 'Stainless steel');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(5, 3, 'Thailand');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(5, 4, '2018');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(5, 7, 'Samsung Washing machine Addwasher.');
+
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(6, 2, 'Stainless steel');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(6, 6, '380L');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(6, 3, 'Thailand');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(6, 4, '2018');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(6, 7, 'Samsung Inverter fridge 380 liters RT38K5982BS/SV');
+
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(7, 2, 'Stainless steel');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(7, 6, '380L');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(7, 3, 'Thailand');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(7, 4, '2018');
+
+INSERT INTO Technical_specifications(Product_ID, Spec_ID, Spec_value)
+VALUES(7, 7, 'Toshiba Inverter fridge 69696969');
+
+
+
+INSERT INTO Image_specification(Img_spec_ID, Img_spec_name)
+VALUES (1,'big_img');
+
+INSERT INTO Image_specification(Img_spec_ID, Img_spec_name)
+VALUES (2,'small_img');
+
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (1, 2, '../Data/img/may-giat-electrolux(300x300).jpg');
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (2, 2, '../Data/img/may-giat-toshiba.jpg');
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (3, 2, '../Data/img/tivi-samsung(300x300).png');
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (4, 2, '../Data/img/tivi-lg.png');
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (5, 2, '../Data/img/may-giat-samsung-add.jpg');
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (6, 2, '../Data/img/tu-lanh-samsung(300x300).jpg');
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (7, 2, '../Data/img/tu-lanh-toshiba.jpg');
+
+INSERT INTO Prices(Price_Value)
+VALUES (2000);
+
+INSERT INTO Prices(Price_Value)
+VALUES (1500);
+
+INSERT INTO Prices(Price_Value)
+VALUES (1300);
+
+INSERT INTO Prices(Price_Value)
+VALUES (1600);
+
+INSERT INTO Prices_mapping(Product_ID, Price_ID)
+VALUES (1, 1);
+
+INSERT INTO Prices_mapping(Product_ID, Price_ID)
+VALUES (2, 1);
+
+INSERT INTO Prices_mapping(Product_ID, Price_ID)
+VALUES (3, 2);
+
+INSERT INTO Prices_mapping(Product_ID, Price_ID)
+VALUES (4, 2);
+
+INSERT INTO Prices_mapping(Product_ID, Price_ID)
+VALUES (5, 3);
+
+INSERT INTO Prices_mapping(Product_ID, Price_ID)
+VALUES (6, 3);
+
+INSERT INTO Prices_mapping(Product_ID, Price_ID)
+VALUES (7, 4);
+
+
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (3, 1, '../data/img/tivi-samsung(big-img).png');
+
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+INSERT INTO Product_Images(Product_ID, Img_spec_ID, Img_Path)
+VALUES (4, 1, '../Data/img/tivi-lg(big-img).png');
+
+
+INSERT INTO product_descriptions(Product_ID, Small_description, Big_description)
+VALUES (3, 'Độ phân giải Full HD cho hình ảnh sắc nét gấp 2 lần độ phân giải HD. Chất lượng hình ảnh được nâng cao nhờ công nghệ Hyper Real Engine.', 
+'Tivi Samsung 40 inch UA40J5250 là một trong những dòng sản phẩm thương hiệu Samsung cho ra mắt vào năm 2018, viền màn hình và chân đế được sử dụng chất liệu nhựa cao cấp cứng cáp. 
+Chân đế bố trí đều 2 bên, giúp tivi trụ vững trên mọi bề mặt. 
+Màn hình tivi Samsung 40 inch là sự lựa chọn hoàn hảo với những căn phòng có diện tích khiêm tốn như:
+ phòng ngủ, phòng ăn,...');
+
+INSERT INTO product_descriptions(Product_ID, Small_description, Big_description)
+VALUES (4, 'Độ phân giải Full HD cho hình ảnh sắc nét gấp 2 lần độ phân giải 4K. Chất lượng hình ảnh được nâng cao nhờ công nghệ Hyper Real Engine.', 
+'Tivi LG Smart TV 4K là một trong những dòng sản phẩm thương hiệu Samsung cho ra mắt vào năm 2019, viền màn hình và chân đế được sử dụng chất liệu nhựa cao cấp cứng cáp. 
+Chân đế bố trí đều 2 bên, giúp tivi trụ vững trên mọi bề mặt. 
+Màn hình Tivi LG Smart TV 4K là sự lựa chọn hoàn hảo với những căn phòng có diện tích khiêm tốn như:
+phòng ngủ, phòng ăn,...');
+

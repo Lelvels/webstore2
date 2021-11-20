@@ -1,0 +1,4 @@
+<?php
+    echo "<p>$brand_name la mot thuong hieu den tu Han Quoc</p>";
+?>
+
